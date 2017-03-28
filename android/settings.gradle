@@ -1,0 +1,3 @@
+rootProject.name = 'Fash_Encyclopedia'
+
+include ':app'
