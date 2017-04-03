@@ -35,15 +35,9 @@ export default class ProductPage extends Component{
       console.log(sampleOutfits);
       console.log(_Item(_Image, sampleOutfits, styles.slideshowImage));
     return(
-      <Card>
+      <Card >
 
-        <Header>
-          <Button type="left" buttonText="Back" onPress={Actions.pop}/>
-          <Text> Fashion Encyclopedia </Text>
-          <Button type="right" buttonText="Home" onPress={Actions.App}/>
-        </Header>
-
-        <CardSection>
+        <CardSection style={{flex: 1,  paddingTop: 55}}>
           <View style={styles.imageLeftContainer}>
             { _Item(_Image, mainImage, styles.imageLeftThumbnail)}
           </View>

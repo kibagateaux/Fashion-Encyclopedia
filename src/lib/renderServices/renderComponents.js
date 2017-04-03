@@ -63,10 +63,9 @@ function _Card(obj, destination){
 //Returns ListView component
 // data prop must be array
 // destination is react-native-router-flux
-//   Actions[destination]
+//   Actions.destination
 function _List(data, destination){
-   const DS = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-   return <List data={data} destination={destination} />
+  return <List data={data} destination={destination} />
 }
 
 function _Item(func, data, metaData = null){
