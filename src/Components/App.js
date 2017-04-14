@@ -12,7 +12,6 @@ import { Actions } from 'react-native-router-flux';
 import { _List, _Item }  from '../lib/renderServices';
 
 import data from '../data';
-import WikiApi from '../data/WikiApi';
 
 export default class App extends Component{
   constructor(props){

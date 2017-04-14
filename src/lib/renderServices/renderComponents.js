@@ -16,6 +16,7 @@ import { Card, CardSection, List } from '../../Components/general';
 // _Item => _List => _Card => _Image + Obj.desc
 
 const _nav = (type) => {
+   console.log("determining nav based on itemType");
   switch(type){
     case 'product':
       return Actions.ProductPage;
@@ -56,15 +57,17 @@ const _Image = (image, styleObj) => {
 // or make a few generic Card templates
 // e.g. this is thmbnailCard
 const _Card = (obj, destination) => {
-   // console.log('_Card _Image array test');
-   // console.log(_Item( _Image, obj.mainImage, styles.imageLeftThumbnail) );
+
+  // destination is default value based on current screen
+    // Category -> Product
+  // obj.itemType is set to override that in case Category -> Category
+  const nextScreen = obj.itemType? _nav(obj.itemType) : destination;
 
   return (
     <Card>
       <TouchableOpacity
         key={obj.name}
-        //onPress={() => _nav(obj.type)}
-        onPress={() => destination(obj)}
+        onPress={() => nextScreen(obj)}
       >
 
       <CardSection>

@@ -31,9 +31,7 @@ export default class ProductPage extends Component{
       sampleOutfits
     } = this.props;
      console.log(" ProductPage _Image array test ");
-
-      console.log(sampleOutfits);
-      console.log(_Item(_Image, sampleOutfits, styles.slideshowImage));
+      console.log(this.props);
     return(
       <Card >
 
