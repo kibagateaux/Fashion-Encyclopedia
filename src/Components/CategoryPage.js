@@ -21,7 +21,6 @@ export default class CategoryPage extends Component{
     return(
       <View style={{flex: 1, paddingTop: 55}}>
         { _Item(_List, data[category], Actions.ProductPage)}
-
       </View>
     )
   }

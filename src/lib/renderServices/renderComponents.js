@@ -7,15 +7,32 @@ import {
   StyleSheet,
   Image
 } from 'react-native';
+import { Actions } from 'react-native-router-flux';
+
 import { Card, CardSection, List } from '../../Components/general';
 
 
+// Content Path
+// _Item => _List => _Card => _Image + Obj.desc
+
+const _nav = (type) => {
+  switch(type){
+    case 'product':
+      return Actions.ProductPage;
+    case 'category':
+      return Actions.CategoryPage;
+    case 'person':
+      console.log("there are no people, how did you get here?");
+       console.log("P.S. you are in renderComponent lib _nav");
+       return;
+    default:
+      console.log("renderComponent _nav; You did not specifiy an item type for navigation");
+      return;
+  }
+}
 
 //can be passed single URL as a string or array of strings
-function _Image(image, styleObj){
-   console.log("_Image");
-    console.log(image, styleObj);
-     console.log(typeof image);
+const _Image = (image, styleObj) => {
  switch(typeof image){
   case "string":
     return <Image
@@ -38,7 +55,7 @@ function _Image(image, styleObj){
 //TODO make text fields dynamic
 // or make a few generic Card templates
 // e.g. this is thmbnailCard
-function _Card(obj, destination){
+const _Card = (obj, destination) => {
    // console.log('_Card _Image array test');
    // console.log(_Item( _Image, obj.mainImage, styles.imageLeftThumbnail) );
 
@@ -46,6 +63,7 @@ function _Card(obj, destination){
     <Card>
       <TouchableOpacity
         key={obj.name}
+        //onPress={() => _nav(obj.type)}
         onPress={() => destination(obj)}
       >
 
@@ -64,11 +82,11 @@ function _Card(obj, destination){
 // data prop must be array
 // destination is react-native-router-flux
 //   Actions.destination
-function _List(data, destination){
+const _List = (data, destination) => {
   return <List data={data} destination={destination} />
 }
 
-function _Item(func, data, metaData = null){
+const _Item = (func, data, metaData = null) => {
   return func(data, metaData);
 }
 
