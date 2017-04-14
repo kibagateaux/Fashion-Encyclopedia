@@ -16,11 +16,12 @@ import { Card, CardSection, List } from '../../Components/general';
 // _Item => _List => _Card => _Image + Obj.desc
 
 const _nav = (type) => {
-   console.log("determining nav based on itemType");
   switch(type){
     case 'product':
       return Actions.ProductPage;
     case 'category':
+      return Actions.CategoryPage;
+    case 'class':
       return Actions.CategoryPage;
     case 'person':
       console.log("there are no people, how did you get here?");
@@ -62,6 +63,18 @@ const _Card = (obj, destination) => {
     // Category -> Product
   // obj.itemType is set to override that in case Category -> Category
   const nextScreen = obj.itemType? _nav(obj.itemType) : destination;
+
+  //change top-level "cateogry" to "class"
+  // then sub fields are cateogy if applicable
+
+  // if itemType = class nextScreen obj is data[obj.class]
+
+  // if itemType is category (not class)
+  // nextScreen obj is data[obj.class][obj.category]
+
+  // else nextScreen obj is obj
+
+  // ^^ this requires changing CategoryPage from data[category] to data
 
   return (
     <Card>

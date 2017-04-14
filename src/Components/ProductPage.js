@@ -33,6 +33,7 @@ export default class ProductPage extends Component{
      console.log(" ProductPage _Image array test ");
       console.log(this.props);
     return(
+
       <Card >
 
         <CardSection style={{flex: 1,  paddingTop: 55}}>
@@ -53,6 +54,7 @@ export default class ProductPage extends Component{
         </ScrollView>
 
       </Card>
+
     )
   }
 
