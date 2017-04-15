@@ -30,31 +30,30 @@ export default class ProductPage extends Component{
       desc,
       sampleOutfits
     } = this.props;
-     console.log(" ProductPage _Image array test ");
-      console.log(this.props);
+
     return(
+      <View style={{paddingTop: 55}}>
+        <Card>
 
-      <Card >
+          <CardSection>
+            <View style={styles.imageLeftContainer}>
+              { _Item(_Image, mainImage, styles.imageLeftThumbnail)}
+            </View>
+            <View style={{flexDirection: 'column', flex: 0.8}}>
+              <Text style={styles.listItemTitle}>  { name } </Text>
+              <Text style={styles.listItemDesc}>  { desc } </Text>
+            </View>
+          </CardSection>
 
-        <CardSection style={{flex: 1,  paddingTop: 55}}>
-          <View style={styles.imageLeftContainer}>
-            { _Item(_Image, mainImage, styles.imageLeftThumbnail)}
-          </View>
-          <View style={{flexDirection: 'column', flex: 0.8}}>
-            <Text style={styles.listItemTitle}>  { name } </Text>
-            <Text style={styles.listItemDesc}>  { desc } </Text>
-          </View>
-        </CardSection>
+          <ScrollView
+            horizontal
+            contentContainerStyle={styles.slideshowContainer}
+          >
+            { _Item(_Image, sampleOutfits, styles.slideshowImage) }
+          </ScrollView>
 
-        <ScrollView
-          horizontal
-          contentContainerStyle={styles.slideshowContainer}
-        >
-          { _Item(_Image, sampleOutfits, styles.slideshowImage) }
-        </ScrollView>
-
-      </Card>
-
+        </Card>
+      </View>
     )
   }
 

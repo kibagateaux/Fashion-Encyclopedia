@@ -13,7 +13,7 @@ const Input = (props) => {
         placeholder={placeholder}
         secureTextEntry={secure}
         autocorrect={false}
-        style={styles.inputStyle}
+        style={props.style? props.style: styles.inputStyle}
         value={value}
         onChangeText={onChangeText}
       />
@@ -24,7 +24,7 @@ const Input = (props) => {
 }
 const styles = StyleSheet.create({
   inputContainer:{
-    flex: 1,
+    flexGrow: 1,
     height: 40,
     flexDirection: 'row',
     alignItems: 'center',

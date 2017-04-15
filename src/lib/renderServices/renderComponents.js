@@ -121,14 +121,19 @@ const _Card = (obj, destination) => {
 }
 
 
-const _indexCard = (obj) => (
-  <Card>
-    <CardSection>
-      { _Item( _Image, obj.mainImage, styles.imageLeftThumbnail) }
-      <Text> { obj.name } </Text>
-      <Text> { obj.desc } </Text>
-    </CardSection>
-  </Card>
+const _indexCard = (obj, nextScreen) => (
+  <TouchableOpacity
+    key={obj.name}
+    onPress={() => nextScreen(obj)}
+  >
+    <Card>
+      <CardSection>
+        { _Item( _Image, obj.mainImage, styles.imageLeftThumbnail) }
+        <Text> { obj.name } </Text>
+        <Text> { obj.desc } </Text>
+      </CardSection>
+    </Card>
+  </TouchableOpacity>
 )
 //Returns ListView component
 // data prop must be array
