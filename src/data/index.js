@@ -2,18 +2,63 @@
 // on on card render change destination based on type
 
 export default {
-    Tops: [
+    Index:[
       {
         mainImage: "https://ae01.alicdn.com/kf/HTB11HjCLFXXXXavXFXXq6xXFXXXb/New-2017-Brand-font-b-POLO-b-font-font-b-Shirt-b-font-Men-Cotton-Fashion.jpg",
         category: "Tops",
+        classType: "Tops",
         name: "Tops",
         desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
         itemType: "category"
       },
       {
+        keywords: [],
+        mainImage: "https://images.express.com/is/image/expressfashion/0024_05595685_0019_f01?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
+        category: "Bottoms",
+        classType: "Bottoms",
+        name: "Bottoms",
+        desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?"
+      },
+      {
+        keywords: [],
+        mainImage: "http://static3.jassets.com/p/John-Players-Navy-Blue-Solid-Bomber-Jacket-5519-0364272-1-pdp_slider_l.webp",
+        category: "OuterWear",
+        classType: "OuterWear",
+        name: "OuterWear",
+        desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?"
+      },
+      {
+        keywords: [],
+        mainImage: "http://static3.jassets.com/p/John-Players-Navy-Blue-Solid-Bomber-Jacket-5519-0364272-1-pdp_slider_l.webp",
+        category: "Shoes",
+        classType: "Shoes",
+        name: "Shoes",
+        desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?"
+      },
+      {
+        keywords: [],
+        mainImage: "http://static3.jassets.com/p/John-Players-Navy-Blue-Solid-Bomber-Jacket-5519-0364272-1-pdp_slider_l.webp",
+        category: "Accessories",
+        classType: "Accessories",
+        name: "Accessories",
+        desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?"
+      },
+      {
+        keywords: [],
+        mainImage: "http://static3.jassets.com/p/John-Players-Navy-Blue-Solid-Bomber-Jacket-5519-0364272-1-pdp_slider_l.webp",
+        category: "Designers",
+        classType: "Designers",
+        name: "Designers",
+        desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?"
+      }
+    ],
+    Tops: [
+      {
+        keywords: [],
         mainImage: "https://ae01.alicdn.com/kf/HTB11HjCLFXXXXavXFXXq6xXFXXXb/New-2017-Brand-font-b-POLO-b-font-font-b-Shirt-b-font-Men-Cotton-Fashion.jpg",
         itemType: "product",
-        category: "Tops",
+        category: "Shirts",
+        classType: "Tops",
         name: "Polo",
         desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
         sampleOutfits: [
@@ -23,9 +68,11 @@ export default {
         ]
       },
       {
+        keywords: [],
           mainImage: "https://i.s-jcrew.com/is/image/jcrew/F8422_NA6308_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=408&hei=408",
           itemType: "product",
-          category: "Tops",
+          category: "Shirts",
+          classType: "Tops",
           name: "Sweaters",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits: [
@@ -35,9 +82,11 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHDlqb8vvCeFC6R0rH20gG-zeWES3HzKlUSd1q8buixmfQdHSp",
           itemType: "product",
-          category: "Tops",
+          category: "Shirts",
+          classType: "Tops",
           name: "Hoodies",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits: [
@@ -48,9 +97,11 @@ export default {
 
         },
         {
+          keywords: [],
           mainImage: "https://s-media-cache-ak0.pinimg.com/564x/76/d8/5b/76d85bb8bb5049f41c7f1a205ad94d61.jpg",
           itemType: "product",
-          category: "Tops",
+          category: "Shirts",
+          classType: "Tops",
           name: "Button Downs",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -60,8 +111,10 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "https://s-media-cache-ak0.pinimg.com/564x/74/82/b5/7482b59c2fe7ad6107216cb5096b5749.jpg",
-          category: "Tops",
+          category: "Shirts",
+          classType: "Tops",
           name: "Blazers",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -71,9 +124,11 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "https://s-media-cache-ak0.pinimg.com/236x/df/65/d0/df65d03473a052f4059c618f89b23334.jpg",
           itemType: "product",
-          category: "Tops",
+          category: "Shirts",
+          classType: "Tops",
           name: "Vests",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -85,14 +140,10 @@ export default {
       ],
     Bottoms: [
       {
-        mainImage: "https://images.express.com/is/image/expressfashion/0024_05595685_0019_f01?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
-        category: "Bottoms",
-        name: "Bottoms",
-        desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?"
-      },
-      {
+        keywords: [],
         mainImage: "https://s-media-cache-ak0.pinimg.com/originals/60/cd/0a/60cd0a923ab3111d4ee734e30ec8ff80.jpg",
         category: "Bottoms",
+        classType: "Bottoms",
         name: "Jeans",
         desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
         sampleOutfits: [
@@ -102,9 +153,11 @@ export default {
         ]
       },
       {
+        keywords: [],
           mainImage: "https://68.media.tumblr.com/33111baa136ebe1779074428439777af/tumblr_n434v7qwqE1rsyaepo1_500.png",
           itemType: "product",
           category: "Bottoms",
+          classType: "Bottoms",
           name: "Khakis",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -114,10 +167,12 @@ export default {
           ]
         },
         {
+          keywords: [],
 
           mainImage: "data:image/jpeg;base64,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",
           itemType: "product",
           category: "Bottoms",
+          classType: "Bottoms",
           name: "Capris",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -127,9 +182,11 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "data:image/jpeg;base64,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",
           itemType: "product",
           category: "Bottoms",
+          classType: "Bottoms",
           name: "Corduroys",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -139,9 +196,11 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "http://lp.hm.com/hmprod?set=key%5Bsource%5D,value%5B/environment/2017/8KZ_0544_001R.jpg%5D&set=key%5Brotate%5D,value%5B0%5D&set=key%5Bwidth%5D,value%5B4069%5D&set=key%5Bheight%5D,value%5B4758%5D&set=key%5Bx%5D,value%5B0%5D&set=key%5By%5D,value%5B-1%5D&set=key%5Btype%5D,value%5BFASHION_FRONT%5D&set=key%5Bhmver%5D,value%5B0%5D&set=key%5Bquality%5D,value%5B80%5D&set=key%5Bsize%5D,value%5B346x405%5D&call=url%5Bfile:/mobile/v2/product%5D",
           itemType: "product",
           category: "Bottoms",
+          classType: "Bottoms",
           name: "Joggers",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -154,15 +213,11 @@ export default {
 
     OuterWear:[
       {
-        mainImage: "http://static3.jassets.com/p/John-Players-Navy-Blue-Solid-Bomber-Jacket-5519-0364272-1-pdp_slider_l.webp",
-        category: "OuterWear",
-        name: "OuterWear",
-        desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?"
-      },
-      {
+        keywords: [],
           mainImage: "https://s-media-cache-ak0.pinimg.com/736x/47/a4/c0/47a4c01e9f72ba2cd22207cac00db888.jpg",
           itemType: "product",
           category: "OuterWear",
+          classType: "OuterWear",
           name: "Leather Jackers",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -172,9 +227,11 @@ export default {
           ]
       },
       {
+        keywords: [],
           mainImage: "https://s-media-cache-ak0.pinimg.com/236x/df/65/d0/df65d03473a052f4059c618f89b23334.jpg",
           itemType: "product",
           category: "OuterWear",
+          classType: "OuterWear",
           name: "Parkas",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -184,8 +241,10 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "https://s-media-cache-ak0.pinimg.com/236x/df/65/d0/df65d03473a052f4059c618f89b23334.jpg",
           category: "OuterWear",
+          classType: "OuterWear",
           name: "Trench Coats",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -195,9 +254,11 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "https://s-media-cache-ak0.pinimg.com/236x/df/65/d0/df65d03473a052f4059c618f89b23334.jpg",
           itemType: "product",
           category: "OuterWear",
+          classType: "OuterWear",
           name: "Denim Jackets",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -207,8 +268,10 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "https://s-media-cache-ak0.pinimg.com/236x/df/65/d0/df65d03473a052f4059c618f89b23334.jpg",
           category: "OuterWear",
+          classType: "OuterWear",
           name: "vests",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -222,15 +285,11 @@ export default {
     ],
       Shoes: [
       {
-        mainImage: "https://s-media-cache-ak0.pinimg.com/236x/97/35/40/9735402dcf652e0c431a75762952a200.jpg",
-        category: "Shoes",
-        name: "Shoes",
-        desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?"
-      },
-      {
+        keywords: [],
           mainImage: "https://brobible.files.wordpress.com/2015/01/chukka3.jpg",
           itemType: "product",
           category: "Shoes",
+          classType: "Shoes",
           name: "Chukkas",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -240,9 +299,11 @@ export default {
           ]
         },
         {
+          keywords: [],
 
           mainImage: "https://brobible.files.wordpress.com/2015/01/visual3.jpg",
           category: "Shoes",
+          classType: "Shoes",
           name: "Dress boots",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -252,9 +313,11 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "data:image/jpeg;base64,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",
           itemType: "product",
           category: "Shoes",
+          classType: "Shoes",
           name: "Boatshoes",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -264,8 +327,10 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "http://ronniefieg.kithnyc.netdna-cdn.com/wp-content/uploads/2012/11/CN135897C_RF6.jpg",
           category: "Shoes",
+          classType: "Shoes",
           name: "Converse",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -275,8 +340,10 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "https://cdn1-upgradedstyleinc.netdna-ssl.com/wp-content/uploads/2016/01/Sneakers.jpg",
           category: "Shoes",
+          classType: "Shoes",
           name: "Sneakers",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -286,8 +353,10 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "data:image/jpeg;base64,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",
           category: "Shoes",
+          classType: "Shoes",
           name: "Trainers",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -297,8 +366,10 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "http://www.erasfashion.com/wp-content/uploads/2015/12/Mens-Shirts-005.jpg",
           category: "Shoes",
+          classType: "Shoes",
           name: "Boatshoes",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -308,8 +379,10 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "http://www.erasfashion.com/wp-content/uploads/2015/12/Mens-Shirts-005.jpg",
           category: "Shoes",
+          classType: "Shoes",
           name: "Boatshoes",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -322,15 +395,11 @@ export default {
       ],
     Accessories: [
       {
-        mainImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwnfSlWGn3x2XJhfnaqIaro-feZMSXd6mPSPbJcwfJ6Jd-FARy",
-        category: "Accessories",
-        name: "Accessories",
-        desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?"
-      },
-      {
+        keywords: [],
           mainImage: "https://i.s-jcrew.com/is/image/jcrew/F8422_NA6308_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=408&hei=408",
           itemType: "product",
           category: "Accessories",
+          classType: "Accessories",
           name: "Swords",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -340,8 +409,10 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "https://i.s-jcrew.com/is/image/jcrew/F8422_NA6308_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=408&hei=408",
           category: "Accessories",
+          classType: "Accessories",
           name: "Necklaces",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -351,8 +422,10 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "http://www.erasfashion.com/wp-content/uploads/2015/12/Mens-Shirts-005.jpg",
           category: "Accessories",
+          classType: "Accessories",
           name: "Bracelets",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -362,8 +435,10 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "http://static1.jassets.com/p/Mr-Button-Grey-Wool-Tweed-Blazer-7137-588918-1-catalog_s.jpg",
           category: "Accessories",
+          classType: "Accessories",
           name: "Watches",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -373,8 +448,10 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "http://www.erasfashion.com/wp-content/uploads/2015/12/Mens-Shirts-005.jpg",
           category: "Accessories",
+          classType: "Accessories",
           name: "Hats",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -384,8 +461,10 @@ export default {
           ]
         },
         {
+          keywords: [],
           mainImage: "http://www.erasfashion.com/wp-content/uploads/2015/12/Mens-Shirts-005.jpg",
           category: "Accessories",
+          classType: "Accessories",
           name: "Bags",
           desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
           sampleOutfits:  [
@@ -397,14 +476,10 @@ export default {
       ],
     // Designers: [
     //   {
-    //     mainImage: "http://www.777a7.com/img4/ubmeymhdrisetupuofap.jpg",
-    //     category: "Designers",
-    //     name: "Designers",
-    //     desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?"
-    //   },
-    //   {
+      // keywords: [],
     //     mainImage: "https://i.s-jcrew.com/is/image/jcrew/F8422_NA6308_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=408&hei=408",
     //     category: "Designers",
+    // classType     category: "Designers",
     //     name: "Khakis",
     //     desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
     //     sampleOutfits:  [
@@ -414,9 +489,11 @@ export default {
     //     ]
     //   },
     //   {
+      // keywords: [],
 
     //     mainImage: "https://i.s-jcrew.com/is/image/jcrew/F8422_NA6308_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=408&hei=408",
     //     category: "Designers",
+    // classType     category: "Designers",
     //     name: "Capris",
     //     desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
     //     sampleOutfits:  [
@@ -426,8 +503,10 @@ export default {
     //     ]
     //   },
     //   {
+      // keywords: [],
     //     mainImage: "http://www.erasfashion.com/wp-content/uploads/2015/12/Mens-Shirts-005.jpg",
     //     category: "Designers",
+    // classType     category: "Designers",
     //     name: "Corduroys",
     //     desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
     //     sampleOutfits:  [
@@ -437,8 +516,10 @@ export default {
     //     ]
     //   },
     //   {
+      // keywords: [],
     //     mainImage: "http://static1.jassets.com/p/Mr-Button-Grey-Wool-Tweed-Blazer-7137-588918-1-catalog_s.jpg",
     //     category: "Designers",
+    // classType     category: "Designers",
     //     name: "Joggers",
     //     desc: "iure iste quidem cupiditate, ducimus magni debitis dolor mollitia eos, distinctio corrupti?",
     //     sampleOutfits:  [

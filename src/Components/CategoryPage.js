@@ -16,7 +16,9 @@ export default class CategoryPage extends Component{
   render(){
 
     const { category } = this.props;
-    data[category].shift();
+
+    data[category]
+
 
     return(
       <View style={{flex: 1, paddingTop: 55}}>

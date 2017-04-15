@@ -35,28 +35,49 @@ const _nav = (type) => {
 
 //can be passed single URL as a string or array of strings
 const _Image = (image, styleObj) => {
- switch(typeof image){
-  case "string":
-    return <Image
-      source={{uri: image}}
-      style={styleObj}
-    />
-  case "object":
-   return image.map(x =>
+
+  if(Array.isArray(image)){
+    return image.map(x =>
       <Image
         key={x}
         source={{uri: x}}
         style={styleObj}
       />
     )
-    default:
-      return null;
   }
+
+  return (
+    <Image
+      source={{uri: image}}
+      style={styleObj}
+    />
+  )
+
+ // switch(typeof image){
+ //  case "string":
+ //    return <Image
+ //      source={{uri: image}}
+ //      style={styleObj}
+ //    />
+ //  case "object":
+ //   return image.map(x =>
+ //      <Image
+ //        key={x}
+ //        source={{uri: x}}
+ //        style={styleObj}
+ //      />
+ //    )
+ //    default:
+ //     console.log("");
+ //      return null;
+ //  }
+
 }
 
-//TODO make text fields dynamic
+//TODO make text fields + styling dynamic
 // or make a few generic Card templates
-// e.g. this is thmbnailCard
+// e.g. this is thumbnailCard
+
 const _Card = (obj, destination) => {
 
   // destination is default value based on current screen
@@ -76,6 +97,11 @@ const _Card = (obj, destination) => {
 
   // ^^ this requires changing CategoryPage from data[category] to data
 
+  // && current screen is App component
+  // or destination is CategoryPage
+
+  if(obj.index) return _indexCard(obj)
+
   return (
     <Card>
       <TouchableOpacity
@@ -94,6 +120,16 @@ const _Card = (obj, destination) => {
   )
 }
 
+
+const _indexCard = (obj) => (
+  <Card>
+    <CardSection>
+      { _Item( _Image, obj.mainImage, styles.imageLeftThumbnail) }
+      <Text> { obj.name } </Text>
+      <Text> { obj.desc } </Text>
+    </CardSection>
+  </Card>
+)
 //Returns ListView component
 // data prop must be array
 // destination is react-native-router-flux

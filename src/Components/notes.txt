@@ -1,0 +1,14 @@
+Change screen rendered dynamically based on objects "type"
+
+Data fetching is also dynamically changed based on screen category
+  data[top-level] is all that is capable atm
+    Currently based on string values, can I make it based on variables
+    Or have category string get parsed on symbol for digging?
+      Stupid and Sloppy like your mother
+    Or make top level objects so digging isn't a problem?
+      Defeats the purpose of nested structure if Converse is outside of Shoes
+    Or have category retrieved before nav
+      see renderComponents _Card notes
+
+    Draw out whole function system, may help
+  need data[top-level][sub-level][sub-level]

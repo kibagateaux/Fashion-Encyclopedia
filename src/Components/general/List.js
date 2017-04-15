@@ -14,6 +14,7 @@ import { _Item, _Card }  from '../../lib/renderServices';
 
 
 const List = (props) => {
+
   const { data, destination } = props
   const DS = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 

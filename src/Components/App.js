@@ -14,16 +14,18 @@ import { _List, _Item }  from '../lib/renderServices';
 import data from '../data';
 
 export default class App extends Component{
+
   constructor(props){
     super(props)
   }
 
   render(){
 
-    const categories = Object.keys(data).map(key => data[key][0]);
+    const classes = data.Index;
+
     return(
       <View style={{paddingTop: 55}}>
-        { _Item(_List, categories, Actions.CategoryPage) }
+        { _Item(_List, classes, Actions.CategoryPage) }
       </View>
     )
   }
