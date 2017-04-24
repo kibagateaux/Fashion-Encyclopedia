@@ -23,8 +23,8 @@ import CategoryPage from './CategoryPage';
         <Router>
           <Scene key="root">
             <Scene key="App" component={App} title="Fashion Encyclopedia" initial={true} hideNavBar={false}/>
-            <Scene key="CategoryPage" component={CategoryPage} title="Category Page"  hideNavBar={false}/>
-            <Scene key="ProductPage" component={ProductPage} title="Product Page" hideNavBar={false}/>
+            <Scene key="CategoryPage" component={CategoryPage} title="Fashion Encyclopedia"  hideNavBar={false}/>
+            <Scene key="ProductPage" component={ProductPage} title="Fashion Encyclopedia" hideNavBar={false}/>
           </Scene>
         </Router>
       )

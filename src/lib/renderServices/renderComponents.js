@@ -15,7 +15,7 @@ import { Card, CardSection, List } from '../../Components/general';
 // Content Path
 // _Item => _List => _Card => _Image + Obj.desc
 
-const _nav = (type) => {
+const _navSelector = (type) => {
   switch(type){
     case 'product':
       return Actions.ProductPage;
@@ -34,44 +34,31 @@ const _nav = (type) => {
 }
 
 //can be passed single URL as a string or array of strings
-const _Image = (image, styleObj) => {
+const _Image = (imageURL, styleObj) => {
 
-  if(Array.isArray(image)){
-    return image.map(x =>
-      <Image
-        key={x}
-        source={{uri: x}}
-        style={styleObj}
-      />
+  if(Array.isArray(imageURL)){
+    return imageURL.map(x => {
+      console.log("_Image url array");
+      // console.log(x);
+      return  <Image
+          key={x}
+          source={{uri: x}}
+          style={styleObj}
+        />
+
+    }
     )
   }
 
+  console.log("_Image url");
+   console.log(imageURL);
+
   return (
     <Image
-      source={{uri: image}}
+      source={{uri: imageURL}}
       style={styleObj}
     />
   )
-
- // switch(typeof image){
- //  case "string":
- //    return <Image
- //      source={{uri: image}}
- //      style={styleObj}
- //    />
- //  case "object":
- //   return image.map(x =>
- //      <Image
- //        key={x}
- //        source={{uri: x}}
- //        style={styleObj}
- //      />
- //    )
- //    default:
- //     console.log("");
- //      return null;
- //  }
-
 }
 
 //TODO make text fields + styling dynamic
@@ -83,10 +70,8 @@ const _Card = (obj, destination) => {
   // destination is default value based on current screen
     // Category -> Product
   // obj.itemType is set to override that in case Category -> Category
-  const nextScreen = obj.itemType? _nav(obj.itemType) : destination;
+  const nextScreen =  _navSelector(obj.itemType);
 
-  //change top-level "cateogry" to "class"
-  // then sub fields are cateogy if applicable
 
   // if itemType = class nextScreen obj is data[obj.class]
 
@@ -97,8 +82,7 @@ const _Card = (obj, destination) => {
 
   // ^^ this requires changing CategoryPage from data[category] to data
 
-  // && current screen is App component
-  // or destination is CategoryPage
+  // if item type is category
 
   if(obj.index) return _indexCard(obj)
 
@@ -110,9 +94,17 @@ const _Card = (obj, destination) => {
       >
 
       <CardSection>
-        { _Item( _Image, obj.mainImage, styles.imageLeftThumbnail) }
-        <Text style={styles.listItemTitle}> { obj.name } </Text>
-        <Text style={styles.listItemDesc}> { obj.desc } </Text>
+        { _Image(obj.mainImage, styles.imageLeftThumbnail) }
+        <View style={styles.cardTextContainer}>
+          <Text style={styles.listItemTitle}> { obj.name } </Text>
+          <Text
+            style={styles.listItemDesc}
+            ellipsizeMode="tail"
+            numberOfLines={5}
+          >
+            { obj.desc }
+          </Text>
+        </View>
       </CardSection>
 
       </TouchableOpacity>
@@ -128,7 +120,7 @@ const _indexCard = (obj, nextScreen) => (
   >
     <Card>
       <CardSection>
-        { _Item( _Image, obj.mainImage, styles.imageLeftThumbnail) }
+        { _Image(obj.mainImage, styles.imageLeftThumbnail) }
         <Text> { obj.name } </Text>
         <Text> { obj.desc } </Text>
       </CardSection>
@@ -153,7 +145,7 @@ const styles = StyleSheet.create({
   imageLeftThumbnail: {
     flexDirection: 'row',
     justifyContent: "flex-start",
-    flex: 0.5,
+    flexGrow: 0.2,
     height: 100,
     width: 50,
   },
@@ -161,11 +153,17 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 20,
     fontWeight: "500",
+    justifyContent: "center",
   },
   listItemDesc: {
     flex: 1,
     fontSize: 14,
     fontWeight: "500",
+  },
+  cardTextContainer:{
+    flexDirection: "column",
+    flex: 1,
+    paddingLeft: 10
   }
 })
 

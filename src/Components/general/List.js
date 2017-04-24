@@ -22,7 +22,7 @@ const List = (props) => {
     <View>
       <ListView
         enableEmptySections={false}
-        dataSource={DS.cloneWithRows(data)}
+        dataSource={ DS.cloneWithRows(data) }
         renderRow={(rowData) => _Item(_Card, rowData, destination)}
       />
     </View>
